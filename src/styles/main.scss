@@ -1,0 +1,36 @@
+@import "components/fonts.scss";
+@import "components/libs.scss";
+@import "components/mixins.scss";
+@import "components/variables.scss";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: $mainFont;
+	font-size: $mainFontSize;
+	line-height: 1.42;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+@import "modules/header.scss";
+@import "modules/footer.scss"
+
+
+
+
+
