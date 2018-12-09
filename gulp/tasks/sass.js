@@ -12,11 +12,8 @@ module.exports = function () {
 					message: error.message
 				};
 			}))
-			.pipe($.gp.uncss({
-				html: ['src/**/*.html']
-			}))
 			.pipe($.gp.autoprefixer({
-				browsers: ['last 1 version']
+				browsers: ['last 2 version']
 			}))
 			.pipe($.gp.csscomb())
 			.pipe($.gp.sourcemaps.write())
@@ -31,15 +28,12 @@ module.exports = function () {
 			.pipe($.gp.sass({
 				'include css': true
 			}))
-			.pipe($.gp.uncss({
-				html: ['src/**/*.html']
-			}))
 			.pipe($.gp.autoprefixer({
-				browsers: ['last 1 version']
+				browsers: ['last 2 version']
 			}))
 			.pipe($.gp.csscomb())
 			.pipe($.gp.csso())
-			.pipe($.gulp.dest('./build/style/'))
+			.pipe($.gulp.dest('./build/styles/'))
 	});
 
 };

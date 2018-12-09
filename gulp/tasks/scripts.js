@@ -12,28 +12,36 @@ module.exports = function () {
 		return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
 			.pipe($.gp.concat('libs.min.js'))
 			.pipe($.gp.uglifyjs())
-			.pipe($.gulp.dest('./build/static/js/'));
+			.pipe($.gulp.dest('./build/js/'));
 	});
 
-	$.gulp.task('js:copy', () => {
+	$.gulp.task('js:dev', () => {
 		return $.gulp.src(['./src/js/*.js',
 				'!./src/js/libs.min.js'
 			])
-			// .pipe($.gp.plumber())
-			// .pipe($.gp.sourcemaps.init())
-			// .pipe($.gp.fileInclude({
-			// 	prefix: '@',
-			// 	basepath: '@file'
-			// }))
-			// .on('error', $.gp.notify.onError(function (error) {
-			// 	return {
-			// 		title: 'JS',
-			// 		message: error.message
-			// 	};
-			// }))
-			// .pipe($.gp.concat('main.min.js'))
-			// .pipe($.gp.uglifyjs())
-			// .pipe($.gp.sourcemaps.write())
+			.pipe($.gp.plumber())
+			.pipe($.gp.sourcemaps.init())
+			.on('error', $.gp.notify.onError(function (error) {
+				return {
+					title: 'JS',
+					message: error.message
+				};
+			}))
+			.pipe($.gp.concat('main.min.js'))
+			.pipe($.gp.uglifyjs())
+			.pipe($.gp.sourcemaps.write())
+			.pipe($.gulp.dest('./build/js/'))
+			.pipe($.browserSync.reload({
+				stream: true
+			}));
+  });
+  
+  $.gulp.task('js:build', () => {
+		return $.gulp.src(['./src/js/*.js',
+				'!./src/js/libs.min.js'
+			])
+			.pipe($.gp.concat('main.min.js'))
+			.pipe($.gp.uglifyjs())
 			.pipe($.gulp.dest('./build/js/'))
 			.pipe($.browserSync.reload({
 				stream: true
