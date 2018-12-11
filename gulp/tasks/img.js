@@ -1,11 +1,11 @@
 module.exports = function() {
   $.gulp.task('img:dev', () => {
-    return $.gulp.src('./src/img/**/*.{png,jpg,gif,webp}')
+    return $.gulp.src(['./src/img/**/*.{png,jpg,gif,webp,svg}','!./src/img/svg/*'])
       .pipe($.gulp.dest('./build/img/'));
   });
 
   $.gulp.task('img:build', () => {
-    return $.gulp.src('./src/img/**/*.{png,jpg,gif}')
+    return $.gulp.src('./src/img/**/*.{png,jpg,gif,svg}')
       .pipe($.gp.plumber())
       .pipe($.gp.imagemin({
         optimizationLevel: 5,
@@ -16,16 +16,6 @@ module.exports = function() {
         use: [$.png()]
       }))
       .pipe($.gulp.dest('./build/img/'));
-  });
-
-  $.gulp.task('svg:copy', () => {
-    return $.gulp.src(['./src/img/general/*.svg', './src/img/content/*.svg'])
-      .pipe($.gp.svgmin({
-        js2svg: {
-          pretty: true
-        }
-      }))
-      .pipe($.gulp.dest('./build/img/**/*.svg'));
   });
 
   $.gulp.task('webp', () => {
