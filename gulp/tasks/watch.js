@@ -10,6 +10,6 @@ module.exports = function () {
 		], $.gulp.series('img:dev'));
 		$.gulp.watch(['./src/img/general/**/*.svg',
 			'./src/img/content/**/*.svg'
-		], $.gulp.series('svg:dev'));
+		], $.gulp.series('svg:copy'));
 	});
 };
