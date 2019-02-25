@@ -14,18 +14,12 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: $mainFont;
+  font-family: $montserratRegular;
   font-size: $mainFontSize;
-  line-height: 1.42;
-}
-
-main {
-  flex: 1 0 auto;
+  line-height: 1.4;
 }
 
 img {
@@ -48,12 +42,24 @@ p {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
 .container {
-  width: 1230px;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page-exhibition .container {
+  width: 1000px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
@@ -78,7 +84,11 @@ input[type="file"].visually-hidden {
 }
 
 @import "modules/header.scss";
-@import "modules/footer.scss"
+@import "modules/footer.scss";
+@import "modules/exhibition-intro.scss";
+
+
+
 
 
 

@@ -1,6 +1,34 @@
 @font-face {
-  font-family: "myFont";
+  font-family: "dancing_scriptregular";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/myFont.woff2") format("woff2"), url("../fonts/myFont.woff") format("woff"), url("../fonts/myFont.svg#myFont") format("svg");
+  src: url("../fonts/dancingscript-regular-webfont.woff2") format("woff2"), url("../fonts/dancingscript-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratlight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratmedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "montserratregular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "playfair_displayregular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/playfairdisplay-regular-webfont.woff2") format("woff2"), url("../fonts/playfairdisplay-regular-webfont.woff") format("woff");
 }

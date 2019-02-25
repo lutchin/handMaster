@@ -1,0 +1,42 @@
+.exhibition-intro {
+  margin-bottom: rem(50);
+}
+
+.exhibition-intro__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: rem(500);
+  padding: 0 rem(30);
+  background: #ffe9e2;
+}
+
+.exhibition-intro__header {
+  position: relative;
+  z-index: 1;
+  max-width: rem(500);
+  margin-bottom: rem(30);
+  font-family: $playfair;
+  font-size: rem(38);
+  line-height: rem(41);
+  font-weight: 400;
+  color: #28261d;
+  text-transform: uppercase;
+}
+
+.exhibition-intro__address {
+  position: relative;
+  z-index: 1;
+  font-family: $montserratLight;
+  font-size: rem(18);
+  color: #28261d;
+}
+
+.exhibition-intro__img {
+  position: absolute;
+  top: -46px;
+  right: -20px;
+  max-width: rem(690);
+  min-height: rem(500);
+}
