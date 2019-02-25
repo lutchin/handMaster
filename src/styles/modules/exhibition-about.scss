@@ -1,0 +1,10 @@
+.exhibition-about__gallery {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}
+
+.exhibition-about__gallery .gallery__item {
+  width: calc((100% - 2 * 10px) / 3);
+  height: 140px;
+  overflow: hidden;
+}
