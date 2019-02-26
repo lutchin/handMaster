@@ -1,0 +1,36 @@
+.exhibition-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: rem(200);
+
+// background: lightgray url("../img/general/exhibition-promo-bg.jpg") center/cover no-repeat;
+  background: lightgray;
+}
+
+.exhibition-promo .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header.exhibition-promo__header h2 {
+  font-family: $montserratMedium;
+  font-size: rem(36);
+  line-height: 1.2;
+  text-align: center;
+  color: #333639;
+  text-transform: none;
+}
+
+.exhibition-promo__header h2 > span {
+  display: block;
+  text-transform: uppercase;
+}
+
+.exhibition-promo__more-link {
+  min-width: rem(200);
+  text-align: center;
+}

@@ -1,3 +1,44 @@
-// footer {
-//   flex: 0 0 auto;
-// }
+.page-footer {
+  padding: rem(25) 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section__title {
+  margin-bottom: rem(10);
+  font-size: rem(16);
+  line-height: rem(20);
+  text-transform: uppercase;
+}
+
+.footer-section__link {
+  display: block;
+  padding: rem(2) 0;
+  color: $gray;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-section__link:hover,
+.footer-section__link:focus {
+  color: #f19576;
+}
+
+// Socials
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials__link {
+  display: block;
+  width: rem(20);
+  height: rem(20);
+  background: $gray;
+  border-radius: 50%;
+}

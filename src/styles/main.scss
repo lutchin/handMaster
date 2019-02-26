@@ -105,12 +105,25 @@ input[type="file"].visually-hidden {
   border-color: #f19576;
 }
 
+.btn--fill {
+  color: #ffffff;
+  background: #f19576;
+  border-color: #f19576;
+}
+
+.btn--fill:hover,
+.btn--fill:focus {
+  background: transparent;
+}
+
 @import "modules/header.scss";
 @import "modules/footer.scss";
 @import "modules/exhibition-intro.scss";
 @import "modules/exhibition-about.scss";
 @import "modules/exhibition-photo.scss";
 @import "modules/exhibition-video.scss";
+@import "modules/exhibition-promo.scss";
+@import "modules/exhibition-contacts.scss";
 
 .section {
   margin-bottom: rem(65);
