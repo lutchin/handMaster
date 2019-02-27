@@ -21,6 +21,13 @@
   color: $pink;
 }
 
+// Menu 
+.page-header__menu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 // Nav
 .nav__list {
   display: flex;

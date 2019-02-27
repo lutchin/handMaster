@@ -1,5 +1,5 @@
-// $(document).ready(function() {
-  // svg4everybody({});
+$(document).ready(function() {
+  svg4everybody({});
 
   // Video
   function findVideos() {
@@ -54,4 +54,4 @@
   }
   
   findVideos();
-// });
+});
