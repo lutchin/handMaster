@@ -10,6 +10,16 @@
   min-height: rem(500);
   padding: 0 rem(30);
   background: #ffe9e2;
+
+  @media (max-width: 992px) {
+    height: 50vw;
+    min-height: auto;
+  }
+
+  @media (max-width: 500px) {
+    height: auto;
+    padding: rem(30);
+  }
 }
 
 .exhibition-intro__header {
@@ -23,6 +33,11 @@
   font-weight: 400;
   color: #28261d;
   text-transform: uppercase;
+
+  @media (max-width: 500px) {
+    font-size: rem(34);
+    text-align: center;
+  }
 }
 
 .exhibition-intro__address {
@@ -37,7 +52,16 @@
   position: absolute;
   top: -46px;
   right: -20px;
+  width: 80%;
   max-width: rem(690);
   height: rem(500);
   overflow: hidden;
+
+  @media (max-width: 992px) {
+    height: 50vw;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }

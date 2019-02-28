@@ -7,6 +7,12 @@
 .exhibition-contacts__map {
   width: 60%;
   min-height: 200px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: rem(30);
+  }
 }
 
 .exhibition-contacts__map iframe {
@@ -18,17 +24,38 @@
 .exhibition-contacts__info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   width: 30%;
   color: #28261d;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .exhibition-contacts__address {
   margin-bottom: rem(10);
+
+  @media (max-width: 768px) {
+    flex: 1 0 50%;
+  }
 }
 
 .exhibition-contacts__time {
   margin-bottom: rem(20);
+
+  @media (max-width: 768px) {
+    flex: 0 0 auto;
+  }
+}
+
+.exhibition-contacts__phones {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .exhibition-contacts__phones p {
