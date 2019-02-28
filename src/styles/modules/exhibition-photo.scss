@@ -16,6 +16,72 @@
   grid-template-rows: repeat(10, 95px);
   width: 100%;
   min-height: 100%;
+
+  @media (max-width: 992px) {
+    grid-template-rows: repeat(10, 75px);
+  }
+
+  @media (max-width: 768px) {
+    grid-template: "i1 i1 i1 i2 i2 i3 i3"
+    "i1 i1 i1 i2 i2 i3 i3"
+    "i1 i1 i1 i4 i4 i5 i5"
+    "i1 i1 i1 i4 i4 i5 i5"
+    "i6 i6 i7 i7 i10 i10 i10"
+    "i6 i6 i7 i7 i10 i10 i10"
+    "i8 i8 i9 i9 i10 i10 i10"
+    "i8 i8 i9 i9 i10 i10 i10"
+    "i11 i11 i11 i12 i12 i12 i12"
+    "i11 i11 i11 i12 i12 i12 i12"
+    "i13 i13 i14 i14 i14 i15 i15"
+    "i13 i13 i14 i14 i14 i15 i15"
+    ". i16 i16 i17 i17 i17 ."
+    ". i16 i16 i17 i17 i17 .";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(14, 75px);
+  }
+
+  @media (max-width: 650px) {
+    grid-template-rows: repeat(14, 65px);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-rows: repeat(14, 55px);
+  }
+
+  @media (max-width: 500px) {
+    grid-template: "i1 i1 i1 i2 i2"
+    "i1 i1 i1 i2 i2"
+    "i1 i1 i1 i3 i3"
+    "i1 i1 i1 i3 i3"
+    "i4 i4 i5 i5 i5"
+    "i4 i4 i5 i5 i5"
+    "i6 i6 i5 i5 i5"
+    "i6 i6 i8 i8 i8"
+    "i7 i7 i8 i8 i8"
+    "i7 i7 i8 i8 i8"
+    "i10 i10 i10 i9 i9"
+    "i10 i10 i10 i9 i9"
+    "i10 i10 i10 i11 i11"
+    "i10 i10 i10 i11 i11"
+    "i12 i12 i12 i12 i12"
+    "i12 i12 i12 i12 i12"
+    "i12 i12 i12 i12 i12"
+    "i13 i13 i14 i14 i14"
+    "i13 i13 i14 i14 i14"
+    "i13 i13 i14 i14 i14"
+    "i15 i15 i15 i16 i16"
+    "i15 i15 i15 i16 i16"
+    "i15 i15 i15 i16 i16"
+    "i17 i17 i17 i17 i17"
+    "i17 i17 i17 i17 i17"
+    "i17 i17 i17 i17 i17";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(24, 55px);
+  }
+
+  @media (max-width: 500px) {
+    grid-template-rows: repeat(24, 45px);
+  }
 }
 
 .exhibition-photo__gallery .gallery__item {

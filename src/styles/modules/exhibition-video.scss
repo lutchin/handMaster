@@ -10,4 +10,12 @@
 .exhibition-video__gallery .gallery__item {
   width: calc((100% - 2 * 30px) / 3);
   margin-bottom: rem(20);
+
+  @media (max-width: 768px) {
+    width: calc((100% - 20px) / 2);
+  }
+
+  @media (max-width: 460px) {
+    width: 100%;
+  }
 }

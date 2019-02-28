@@ -8,3 +8,10 @@
   height: 140px;
   overflow: hidden;
 }
+
+.exhibition-about__gallery .gallery__img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}

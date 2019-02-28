@@ -52,6 +52,10 @@
   padding: rem(2) 0;
   color: $gray;
   transition: 0.3s ease-in-out;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 }
 
 .footer-section__link:hover,
@@ -77,12 +81,18 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: $gray;
-  border-radius: 50%;
+  line-height: 1;
   transition: 0.3s ease-in-out;
 }
 
-.socials__link:hover,
-.socials__link:focus {
-  background: $pink;
+.socials__link-img {
+  width: 20px;
+  height: 20px;
+  transition: 0.3s ease-in-out;
+  fill: $gray;
+}
+
+.socials__link-img:hover,
+.socials__link-img:focus {
+  fill: #f19576;
 }
