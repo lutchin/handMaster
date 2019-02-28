@@ -72,5 +72,6 @@
 
 .exhibition-contacts__phones a:hover,
 .exhibition-contacts__phones a:focus {
-  color: #f19576;
+  color: $pink;
+  outline: none;
 }

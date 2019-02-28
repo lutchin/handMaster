@@ -112,19 +112,21 @@ input[type="file"].visually-hidden {
 
 .btn:hover,
 .btn:focus {
-  color: #f19576;
-  border-color: #f19576;
+  color: $pink;
+  border-color: $pink;
+  outline: none;
 }
 
 .btn--fill {
   color: #ffffff;
-  background: #f19576;
-  border-color: #f19576;
+  background: $pink;
+  border-color: $pink;
 }
 
 .btn--fill:hover,
 .btn--fill:focus {
   background: transparent;
+  outline: none;
 }
 
 @import "modules/header.scss";
@@ -158,7 +160,13 @@ input[type="file"].visually-hidden {
   font-family: $montserratMedium;
   font-size: 14px;
   line-height: 17px;
-  color: #f19576;
+  color: $pink;
+  transition: 0.3s ease-in-out;
+}
+
+.section-header__see-all:hover,
+.section-header__see-all:focus {
+  color: $gray;
 }
 
 .section-header h2 + .section-header__see-all {
@@ -204,8 +212,8 @@ input[type="file"].visually-hidden {
 }
 
 .controls__item.active .btn {
-  color: #f19576;
-  border-color: #f19576;
+  color: $pink;
+  border-color: $pink;
 }
 
 .section-text {
@@ -287,6 +295,7 @@ input[type="file"].visually-hidden {
 
 .video:hover .video__button-shape,
 .video__button:focus .video__button-shape {
+  outline: none;
   fill: #ff0000;
 
   fill-opacity: 1;

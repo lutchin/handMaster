@@ -1,6 +1,10 @@
 $(document).ready(function() {
   svg4everybody({});
 
+  $('.menu-toggle').on('click', function(){
+    $('body').toggleClass('open');
+  });
+
   // Video
   function findVideos() {
     let videos = document.querySelectorAll('.video');
