@@ -47,7 +47,7 @@ module.exports = function () {
 				'!./src/js/libs.min.js'
 			])
 			.pipe($.gp.concat('main.min.js'))
-			.pipe($.gp.uglifyjs())
+			// .pipe($.gp.uglifyjs())
 			.pipe($.gulp.dest('./build/js/'))
 			.pipe($.browserSync.reload({
 				stream: true
