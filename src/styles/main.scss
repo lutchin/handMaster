@@ -132,6 +132,7 @@ input[type="file"].visually-hidden {
 
 @import "modules/header.scss";
 @import "modules/footer.scss";
+@import "modules/item.scss";
 @import "modules/exhibition-intro.scss";
 @import "modules/exhibition-about.scss";
 @import "modules/exhibition-photo.scss";
@@ -140,6 +141,7 @@ input[type="file"].visually-hidden {
 @import "modules/exhibition-contacts.scss";
 @import "modules/intro.scss";
 @import "modules/promotions.scss";
+@import "modules/discount.scss";
 
 .section {
   margin-bottom: rem(65);
@@ -239,6 +241,12 @@ input[type="file"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 -1%;
+}
+
+.gallery__item {
+  width: 22%;
+  margin: 0 1%;
 }
 
 // Video
