@@ -1,7 +1,7 @@
 $(document).ready(function() {
   svg4everybody({});
 
-  $('.menu-toggle').on('click', function(){
+  $('.nav-toggle').on('click', function(){
     $('body').toggleClass('open');
   });
 
