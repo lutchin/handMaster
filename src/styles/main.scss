@@ -101,6 +101,7 @@ input[type="file"].visually-hidden {
   padding: rem(4);
   padding-top: rem(13);
   padding-bottom: rem(11);
+  text-align: center;
   color: $gray;
   text-transform: uppercase;
   background: transparent;
@@ -137,6 +138,8 @@ input[type="file"].visually-hidden {
 @import "modules/exhibition-video.scss";
 @import "modules/exhibition-promo.scss";
 @import "modules/exhibition-contacts.scss";
+@import "modules/intro.scss";
+@import "modules/promotions.scss";
 
 .section {
   margin-bottom: rem(65);
