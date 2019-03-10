@@ -2,11 +2,6 @@
   position: relative;
 }
 
-.gallery__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .item:hover .actions {
   display: block;
 }
@@ -151,11 +146,25 @@
   color: $pink;
 }
 
+// Goods
+.goods {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.goods p {
+  font-family: $montserratMedium;
+  font-size: 11px;
+  line-height: 13px;
+  color: $pink;
+}
+
 
 // Actions
 .actions {
   position: absolute;
   top: calc(100% - 10px);
+  left: 0;
   display: none;
   width: 100%;
   padding-bottom: 10px;

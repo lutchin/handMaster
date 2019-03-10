@@ -21,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;
+  width: 90%;
   text-align: center;
   transform: translate(-50%, -50%);
 }
@@ -37,4 +37,11 @@
   color: $gray;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.8);
+  transition: 0.3s ease-in-out;
+}
+
+
+.present__link:hover .present__text,
+.present__link:focus .present__text {
+  background: rgba(255, 255, 255, 1);
 }

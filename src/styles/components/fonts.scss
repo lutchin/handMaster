@@ -1,4 +1,5 @@
 @font-face {
+  display: swap;
   font-family: "dancing_scriptregular";
   font-weight: normal;
   font-style: normal;
@@ -6,6 +7,7 @@
 }
 
 @font-face {
+  display: swap;
   font-family: "montserratlight";
   font-weight: normal;
   font-style: normal;
@@ -13,6 +15,7 @@
 }
 
 @font-face {
+  display: swap;
   font-family: "montserratmedium";
   font-weight: normal;
   font-style: normal;
@@ -20,6 +23,7 @@
 }
 
 @font-face {
+  display: swap;
   font-family: "montserratregular";
   font-weight: normal;
   font-style: normal;
@@ -27,8 +31,17 @@
 }
 
 @font-face {
+  display: swap;
   font-family: "playfair_displayregular";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/playfairdisplay-regular-webfont.woff2") format("woff2"), url("../fonts/playfairdisplay-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  display: swap;
+  font-family: "amatic_scbold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/amaticsc-bold-webfont.woff2") format("woff2"), url("../fonts/amaticsc-bold-webfont.woff") format("woff");
 }
