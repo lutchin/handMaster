@@ -1,0 +1,40 @@
+.presents__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.presents__item {
+  position: relative;
+  width: 16.333%;
+  height: rem(160);
+  overflow: hidden;
+}
+
+.present__img {
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.present__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.present__text {
+  display: block;
+  width: 100%;
+  padding: rem(12) rem(5);
+  font-family: $montserratMedium;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $gray;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.8);
+}

@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .item:hover .actions {
   display: block;
 }
@@ -13,7 +18,7 @@
 .item__body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px;
 }
 
@@ -38,6 +43,20 @@
 .title__link:hover .title__text,
 .title__link:focus .title__text {
   color: $pink;
+}
+
+
+// Data
+.data {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.data__time {
+  font-family: $montserratLight;
+  font-size: 9px;
+  line-height: 11px;
+  color: #a09896;
 }
 
 
@@ -108,7 +127,7 @@
 
 // Rating
 .rating {
-  margin-right: auto;
+  margin: 0 auto;
   margin-bottom: 5px;
 }
 
@@ -121,6 +140,7 @@
 
 // Comments
 .comments {
+  margin: 0 auto;
   margin-bottom: 5px;
 }
 
@@ -182,3 +202,4 @@
   line-height: 11px;
   font-weight: 500;
 }
+
