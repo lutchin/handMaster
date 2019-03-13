@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+  
+
+  <title>Page title</title>
+  
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header class="page-header">
+  <div class="container">
+    <div class="page-header__menu menu">
+      <div class="page-header__logo logo">
+        <a href="index.html" class="logo__link">HandMaster</a>
+      </div>
+
+      <div class="page-header__search">
+        <form class="search-form">
+          <p class="search-form__block">
+            <label for="site-search" class="search-form__block-title visually-hidden">Поиск по сайту</label>
+            <input class="search-form__field" id="site-search" type="search" name="search" placeholder="Поиск">
+            <button class="search-form__submit" type="submit" aria-label="Искать">
+              <svg width="18" height="18" class="search-form__submit-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <div class="page-header__user user-info">
+        <ul class="user-info__list">
+          <li class="user-info__item user-info__item--search">
+            <a href="#" class="user-info__link" aria-label="Поиск по сайту">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-info__item user-info__item--likes">
+            <a href="#" class="user-info__link" aria-label="Лайки пользователя">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+              </svg>
+            </a>
+            <span class="user-info__link-count">10</span>
+          </li>
+          <li class="user-info__item user-info__item--cart">
+            <a href="#" class="user-info__link" aria-label="Корзина пользователя">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+              </svg>
+            </a>
+            <span class="user-info__link-count">178</span>
+          </li>
+          <li class="user-info__item user-info__item--login">
+            <a href="#" class="user-info__link" aria-label="Вход в личный кабинет">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#login"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-toggle" aria-label="Показать/скрыть меню"></button>
+
+    </div>
+
+    <div class="page-header__nav">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Изделия</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Мастера</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Мастер-классы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Акции и скидки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Афиша</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Продавцам</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Покупателям</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  
+  <main class="page-content">
+    <section class="section intro container">
+  <header class="section-header intro__header">
+    <h1>Изделия ручной работы, подарки, сувениры от лучших мастеров!</h1>
+  </header>
+  <div class="section-body intro__body">
+    <a class="intro__link btn" href="#">Каталог</a>
+  </div>
+</section>
+
+    <section class="section promotions">
+  <div class="container">
+    <header class="section-header promotions__header">
+      <h2>Лучшие акции и предложения!</h2>
+    </header>
+    <div class="section-body promotions__body">
+      <ul class="promotions__list">
+        <li class="promotions__item promotion">
+          <a class="promotion__link" href="#">
+            <picture>
+              <!-- <source srcset="img/content/promotion-1.webp"> -->
+              <img class="promotion__img" src="img/content/promotion-1.jpg" alt="Описание картинки">
+            </picture>
+            <span class="promotion__text">Акция на шерсть для валяния кардочес!</span>
+          </a>
+        </li>
+        <li class="promotions__item promotion">
+          <a class="promotion__link" href="#">
+            <picture>
+              <!-- <source srcset="img/content/promotion-2.webp"> -->
+              <img class="promotion__img" src="img/content/promotion-2.jpg" alt="Описание картинки">
+            </picture>
+            <span class="promotion__text">Портрет по фотографии на заказ.</span>
+          </a>
+        </li>
+        <li class="promotions__item promotion">
+          <a class="promotion__link" href="#">
+            <picture>
+              <!-- <source srcset="img/content/promotion-3.webp"> -->
+              <img class="promotion__img" src="img/content/promotion-3.jpg" alt="Описание картинки">
+            </picture>
+            <span class="promotion__text">Эксклюзивные подарки и сувениры на заказ.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="section discount">
+  <div class="container">
+    <header class="section-header discount__header">
+      <h2>Акции и скидки</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body discount__body">
+      <div class="section-text discount__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero, fuga ratione quibusdam. Corrupti natus itaque voluptatem nam odit ex aliquid rerum accusantium temporibus perspiciatis ipsam soluta, recusandae minus pariatur quae explicabo. Eveniet, eum. Maiores numquam fugit ab nobis quis mollitia quam? Culpa eaque asperiores soluta magnam corporis nisi amet sint dicta, vitae deleniti voluptatum modi quae aliquid rem itaque, eius distinctio. Itaque tempora reiciendis quae, reprehenderit, quod velit debitis unde, similique modi dolorum qui impedit assumenda iusto cupiditate nam. Aperiam doloremque, consequuntur, corrupti ullam amet veniam voluptas vero neque cupiditate, earum iusto?
+        </p>
+      </div>
+      <div class="discount__gallery gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/exhibition-about-1.webp"> -->
+                <img src="img/content/exhibition-about-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Бизиборд двусторонний</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">Master_Board</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__old">120,00 руб.</p>
+                <p class="price__current">100,00 руб.</p>
+                <p class="price__discount">10%</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(158)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 0</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/exhibition-about-1.webp"> -->
+                <img src="img/content/exhibition-about-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Бизиборд двусторонний</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">Master_Board</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__old">120,00 руб.</p>
+                <p class="price__current">100,00 руб.</p>
+                <p class="price__discount">10%</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(158)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 0</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/exhibition-about-1.webp"> -->
+                <img src="img/content/exhibition-about-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Бизиборд двусторонний</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">Master_Board</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__old">120,00 руб.</p>
+                <p class="price__current">100,00 руб.</p>
+                <p class="price__discount">10%</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(158)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 0</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/exhibition-about-1.webp"> -->
+                <img src="img/content/exhibition-about-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Бизиборд двусторонний</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">Master_Board</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__old">120,00 руб.</p>
+                <p class="price__current">100,00 руб.</p>
+                <p class="price__discount">10%</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(158)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 0</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg width="11" height="11" class="actions__btn-img" role="img">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section popular">
+  <div class="container">
+    <header class="section-header popular__header">
+      <h2>Популярные товары</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body">
+      <div class="section-text popular__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero, fuga ratione quibusdam. Corrupti natus itaque voluptatem nam odit ex aliquid rerum accusantium temporibus perspiciatis ipsam soluta, recusandae minus pariatur quae explicabo. Eveniet, eum. Maiores numquam fugit ab nobis quis mollitia quam? Culpa eaque asperiores soluta magnam corporis nisi amet sint dicta, vitae deleniti voluptatum modi quae aliquid rem itaque, eius distinctio. Itaque tempora reiciendis quae, reprehenderit, quod velit debitis unde, similique modi dolorum qui impedit assumenda iusto cupiditate nam. Aperiam doloremque, consequuntur, corrupti ullam amet veniam voluptas vero neque cupiditate, earum iusto?
+        </p>
+      </div>
+      <div class="popular__gallery gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/popular-1.webp"> -->
+                <img src="img/content/popular-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(223)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 120</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/popular-1.webp"> -->
+                <img src="img/content/popular-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(2131)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 123</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/popular-1.webp"> -->
+                <img src="img/content/popular-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(1241)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 3512</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/popular-1.webp"> -->
+                <img src="img/content/popular-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(1258)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 1230</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section popular-video">
+  <div class="container">
+    <header class="section-header popular-video__header">
+      <h2>Популярные товары</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body">
+      <div class="section-text popular-video__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero, fuga ratione quibusdam. Corrupti natus itaque voluptatem nam odit ex aliquid rerum accusantium temporibus perspiciatis ipsam soluta, recusandae minus pariatur quae explicabo.
+        </p>
+      </div>
+      <div class="popular-video__gallery gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(223)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 120</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(2131)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 123</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(1241)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 3512</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Свадебный альбом с элементами поп ап.</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__author author">
+                <p>от <a class="author__link" href="#">NaTaEksklyuziv</a></p>
+              </div>
+
+              <div class="item__price price">
+                <p class="price__current">100,00 руб.</p>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(1258)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 1230</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить этот товар как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Добавить этот товар в корзину">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="actions__btn-text">В корзину</span>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение товара">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section presents">
+  <div class="container">
+    <header class="section-header presents__header">
+      <h2>Подарки</h2>
+    </header>
+    <div class="section-body presents__body">
+      <div class="section-text discount__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero, fuga ratione quibusdam. Corrupti natus itaque voluptatem nam odit ex aliquid rerum accusantium temporibus perspiciatis ipsam soluta, recusandae minus pariatur quae explicabo.
+        </p>
+      </div>
+      <ul class="presents__list">
+        <li class="presents__item present">
+          <picture>
+            <!-- <source srcset="img/content/present-1.webp"> -->
+            <img class="present__img" src="img/content/present-1.jpg" alt="Описание картинки">
+          </picture>
+
+          <a class="present__link" href="#">
+            <span class="present__text">К празднику</span>
+          </a>
+        </li>
+        <li class="presents__item present">
+          <picture>
+            <!-- <source srcset="img/content/present-1.webp"> -->
+            <img class="present__img" src="img/content/present-1.jpg" alt="Описание картинки">
+          </picture>
+
+          <a class="present__link" href="#">
+            <span class="present__text">Для него</span>
+          </a>
+        </li>
+        <li class="presents__item present">
+          <picture>
+            <!-- <source srcset="img/content/present-1.webp"> -->
+            <img class="present__img" src="img/content/present-1.jpg" alt="Описание картинки">
+          </picture>
+          
+          <a class="present__link" href="#">
+            <span class="present__text">Для нее</span>
+          </a>
+        </li>
+        <li class="presents__item present">
+          <picture>
+            <!-- <source srcset="img/content/present-1.webp"> -->
+            <img class="present__img" src="img/content/present-1.jpg" alt="Описание картинки">
+          </picture>
+
+          <a class="present__link" href="#">
+            <span class="present__text">К свадьбе</span>
+          </a>
+        </li>
+        <li class="presents__item present">
+          <picture>
+            <!-- <source srcset="img/content/present-1.webp"> -->
+            <img class="present__img" src="img/content/present-1.jpg" alt="Описание картинки">
+          </picture>
+
+          <a class="present__link" href="#">
+            <span class="present__text">На новоселье</span>
+          </a>
+        </li>
+        <li class="presents__item present">
+          <picture>
+            <!-- <source srcset="img/content/present-1.webp"> -->
+            <img class="present__img" src="img/content/present-1.jpg" alt="Описание картинки">
+          </picture>
+
+          <a class="present__link" href="#">
+            <span class="present__text">К 14 февраля</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="section promo container">
+  <div class="promo__wrapper">
+    <header class="section-header promo__header">
+      <h2>Как начать зарабатывать с <span>HANDMASTER</span></h2>
+    </header>
+    <div class="section-body">
+      <a class="promo__more-link btn" href="#">Узнать больше</a>
+    </div>
+  </div>
+</section>
+
+    <section class="section masters">
+  <div class="container">
+    <header class="section-header masters__header">
+      <h2>Мастера</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body">
+      <div class="section-text masters__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero, fuga ratione quibusdam. Corrupti natus itaque voluptatem nam odit ex aliquid rerum accusantium temporibus perspiciatis ipsam soluta, recusandae minus pariatur quae explicabo. Eveniet, eum. Maiores numquam fugit ab nobis quis mollitia quam? Culpa eaque asperiores soluta magnam corporis nisi amet sint dicta, vitae deleniti voluptatum modi quae aliquid rem itaque, eius distinctio.
+        </p>
+      </div>
+      <div class="masters__gallery gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/masters-1.webp"> -->
+                <img src="img/content/masters-1.png" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Дешковец Таня</h3>
+                </a>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(0)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 1230</p>
+              </div>
+
+              <div class="item__goods goods">
+                <p>товаров 10</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить автора как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Написать комментарий автору">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#comments"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение автора">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/masters-1.webp"> -->
+                <img src="img/content/masters-1.png" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Дешковец Таня</h3>
+                </a>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(0)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 1230</p>
+              </div>
+
+              <div class="item__goods goods">
+                <p>товаров 10</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить автора как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Написать комментарий автору">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#comments"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение автора">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/masters-1.webp"> -->
+                <img src="img/content/masters-1.png" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Дешковец Таня</h3>
+                </a>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(0)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 1230</p>
+              </div>
+
+              <div class="item__goods goods">
+                <p>товаров 10</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить автора как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Написать комментарий автору">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#comments"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение автора">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__img">
+              <picture>
+                <!-- <source srcset="img/content/masters-1.webp"> -->
+                <img src="img/content/masters-1.png" alt="Описание картинки">
+              </picture>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Дешковец Таня</h3>
+                </a>
+              </div>
+
+              <div class="item__rating rating">
+                Рейтинг <span class="rating__count">(0)</span>
+              </div>
+
+              <div class="item__comments comments">
+                <p>отзывов 1230</p>
+              </div>
+
+              <div class="item__goods goods">
+                <p>товаров 10</p>
+              </div>
+
+              <div class="item__actions actions">
+                <ul class="actions__list">
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Отметить автора как нравится">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Написать комментарий автору">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#comments"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="actions__item">
+                    <button class="actions__btn btn btn--fill" type="button" aria-label="Увеличить изображение автора">
+                      <svg class="actions__btn-img" role="img" width="11" height="11">
+                        <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section lessons">
+  <div class="container">
+    <header class="section-header lessons__header">
+      <h2>Мастер-классы</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body lessons__body">
+      <div class="section-text discount__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero, fuga ratione quibusdam. Corrupti natus itaque voluptatem nam odit ex aliquid rerum accusantium temporibus perspiciatis ipsam soluta, recusandae minus pariatur quae explicabo.
+        </p>
+      </div>
+      <ul class="lessons__list">
+        <li class="lessons__item lesson">
+          <div class="lesson__img">
+            <picture>
+              <!-- <source srcset="img/content/lesson-1.webp"> -->
+              <img src="img/content/lesson-1.jpg" alt="Описание картинки">
+            </picture>
+          </div>
+          <div class="lesson__content">
+            <h3 class="lesson__title">Как сегодня носить брюки «в пол» И отучиться сверкать щиколотками</h3>
+            <div class="lesson__text">
+              <p>
+                Как сегодня носить брюки «в пол» И отучиться сверкать щиколотками ​Мода последних сезонов сыграла с нами злую шутку — приучила к длине «покороче». Тем временем обнажен ...
+              </p>
+            </div>
+            <a class="lesson__link btn" href="#">Читать</a>
+          </div>
+        </li>
+
+        <li class="lessons__item lesson">
+          <div class="lesson__img">
+            <picture>
+              <!-- <source srcset="img/content/lesson-1.webp"> -->
+              <img src="img/content/lesson-1.jpg" alt="Описание картинки">
+            </picture>
+          </div>
+          <div class="lesson__content">
+            <h3 class="lesson__title">Как сегодня носить брюки «в пол» И отучиться сверкать щиколотками</h3>
+            <div class="lesson__text">
+              <p>
+                Как сегодня носить брюки «в пол» И отучиться сверкать щиколотками ​Мода последних сезонов сыграла с нами злую шутку — приучила к длине «покороче». Тем временем обнажен ...
+              </p>
+            </div>
+            <a class="lesson__link btn" href="#">Читать</a>
+          </div>
+        </li>
+
+        <li class="lessons__item lesson">
+          <div class="lesson__img">
+            <picture>
+              <!-- <source srcset="img/content/lesson-1.webp"> -->
+              <img src="img/content/lesson-1.jpg" alt="Описание картинки">
+            </picture>
+          </div>
+          <div class="lesson__content">
+            <h3 class="lesson__title">Как сегодня носить брюки «в пол» И отучиться сверкать щиколотками</h3>
+            <div class="lesson__text">
+              <p>
+                Как сегодня носить брюки «в пол» И отучиться сверкать щиколотками ​Мода последних сезонов сыграла с нами злую шутку — приучила к длине «покороче». Тем временем обнажен ...
+              </p>
+            </div>
+            <a class="lesson__link btn" href="#">Читать</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="section lessons-video">
+  <div class="container">
+    <header class="section-header lessons-video__header">
+      <h2>Видео мастер-классов</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body">
+      <div class="section-text lessons-video__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae.
+        </p>
+      </div>
+      <div class="lessons-video__gallery gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source type="image/webp" srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Текстильная кукла ростом 25 см мастер класс</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__description description">
+                <p>
+                  В этом мастер классе показываю и рассказываю как я шила кукол...
+                </p>
+              </div>
+
+              <div class="item__author author">
+                <p><a class="author__link" href="#">Елена Кошелева</a></p>
+              </div>
+
+              <div class="item__views views">
+                <p><span class="count">6057</span> просмотров</p>
+              </div>
+            </div>
+          </li>
+          
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source type="image/webp" srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Текстильная кукла ростом 25 см мастер класс</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__description description">
+                <p>
+                  В этом мастер классе показываю и рассказываю как я шила кукол...
+                </p>
+              </div>
+
+              <div class="item__author author">
+                <p><a class="author__link" href="#">Елена Кошелева</a></p>
+              </div>
+
+              <div class="item__views views">
+                <p><span class="count">6057</span> просмотров</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source type="image/webp" srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Текстильная кукла ростом 25 см мастер класс</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__description description">
+                <p>
+                  В этом мастер классе показываю и рассказываю как я шила кукол...
+                </p>
+              </div>
+
+              <div class="item__author author">
+                <p><a class="author__link" href="#">Елена Кошелева</a></p>
+              </div>
+
+              <div class="item__views views">
+                <p><span class="count">6057</span> просмотров</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery__item item">
+            <div class="item__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source type="image/webp" srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg" alt="Описание картинки">
+                </picture>
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="48" height="28" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="item__body">
+              <div class="item__title title">
+                <a class="title__link" href="#">
+                  <h3 class="title__text">Текстильная кукла ростом 25 см мастер класс</h3>
+                </a>
+              </div>
+
+              <div class="item__data data">
+                <time class="data__time" datetime="2017-06-08">8 июня 2017</time>
+              </div>
+
+              <div class="item__description description">
+                <p>
+                  В этом мастер классе показываю и рассказываю как я шила кукол...
+                </p>
+              </div>
+
+              <div class="item__author author">
+                <p><a class="author__link" href="#">Елена Кошелева</a></p>
+              </div>
+
+              <div class="item__views views">
+                <p><span class="count">6057</span> просмотров</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="section news">
+  <div class="container">
+    <header class="section-header news__header">
+      <h2>Афиша</h2>
+      <a class="section-header__see-all" href="#">Смотреть все</a>
+    </header>
+    <div class="section-body news__body">
+      <div class="section-text news__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quia distinctio quas repudiandae officiis doloribus fugiat libero.
+        </p>
+      </div>
+      <ul class="news__list">
+        <li class="news__item news-item">
+          <a class="news-item__link" href="#">
+            <div class="news-item__img">
+              <picture>
+                <!-- <source srcset="img/content/news-item-1.webp"> -->
+                <img src="img/content/news-item-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+
+            <h3 class="news-item__title">Чароуны млын 1-3 марта</h3>
+          </a>
+        </li>
+        
+        <li class="news__item news-item">
+          <a class="news-item__link" href="#">
+            <div class="news-item__img">
+              <picture>
+                <!-- <source srcset="img/content/news-item-1.webp"> -->
+                <img src="img/content/news-item-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+
+            <h3 class="news-item__title">Чароуны млын 1-3 марта</h3>
+          </a>
+        </li>
+
+        <li class="news__item news-item">
+          <a class="news-item__link" href="#">
+            <div class="news-item__img">
+              <picture>
+                <!-- <source srcset="img/content/news-item-1.webp"> -->
+                <img src="img/content/news-item-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+
+            <h3 class="news-item__title">Чароуны млын 1-3 марта</h3>
+          </a>
+        </li>
+
+        <li class="news__item news-item">
+          <a class="news-item__link" href="#">
+            <div class="news-item__img">
+              <picture>
+                <!-- <source srcset="img/content/news-item-1.webp"> -->
+                <img src="img/content/news-item-1.jpg" alt="Описание картинки">
+              </picture>
+            </div>
+
+            <h3 class="news-item__title">Чароуны млын 1-3 марта</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="section last">
+    <div class="container">
+      <header class="section-header last__header">
+        <h2>Последние просмотренные</h2>
+        <a class="section-header__see-all" href="#">Смотреть все</a>
+      </header>
+      <div class="section-body last__body">
+        <ul class="last__list">
+          <li class="last__item last-item">
+            <a class="last-item__link" href="#">
+              <div class="last-item__img">
+                <picture>
+                  <!-- <source srcset="img/content/last-item-1.webp"> -->
+                  <img src="img/content/last-item-1.jpg" alt="Описание картинки">
+                </picture>
+              </div>
+  
+              <h3 class="last-item__title">Игрушка-комфортер «Зайчик» бирюзовый</h3>
+            </a>
+          </li>
+          
+          <li class="last__item last-item">
+            <a class="last-item__link" href="#">
+              <div class="last-item__img">
+                <picture>
+                  <!-- <source srcset="img/content/last-item-1.webp"> -->
+                  <img src="img/content/last-item-1.jpg" alt="Описание картинки">
+                </picture>
+              </div>
+  
+              <h3 class="last-item__title">Игрушка-комфортер «Зайчик» бирюзовый</h3>
+            </a>
+          </li>
+  
+          <li class="last__item last-item">
+            <a class="last-item__link" href="#">
+              <div class="last-item__img">
+                <picture>
+                  <!-- <source srcset="img/content/last-item-1.webp"> -->
+                  <img src="img/content/last-item-1.jpg" alt="Описание картинки">
+                </picture>
+              </div>
+  
+              <h3 class="last-item__title">Игрушка-комфортер «Зайчик» бирюзовый</h3>
+            </a>
+          </li>
+  
+          <li class="last__item last-item">
+            <a class="last-item__link" href="#">
+              <div class="last-item__img">
+                <picture>
+                  <!-- <source srcset="img/content/last-item-1.webp"> -->
+                  <img src="img/content/last-item-1.jpg" alt="Описание картинки">
+                </picture>
+              </div>
+  
+              <h3 class="last-item__title">Игрушка-комфортер «Зайчик» бирюзовый</h3>
+            </a>
+          </li>
+          
+          <li class="last__item last-item">
+            <a class="last-item__link" href="#">
+              <div class="last-item__img">
+                <picture>
+                  <!-- <source srcset="img/content/last-item-1.webp"> -->
+                  <img src="img/content/last-item-1.jpg" alt="Описание картинки">
+                </picture>
+              </div>
+  
+              <h3 class="last-item__title">Игрушка-комфортер «Зайчик» бирюзовый</h3>
+            </a>
+          </li>
+
+          <li class="last__item last-item">
+            <a class="last-item__link" href="#">
+              <div class="last-item__img">
+                <picture>
+                  <!-- <source srcset="img/content/last-item-1.webp"> -->
+                  <img src="img/content/last-item-1.jpg" alt="Описание картинки">
+                </picture>
+              </div>
+  
+              <h3 class="last-item__title">Игрушка-комфортер «Зайчик» бирюзовый</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+    
+  </main>
+
+  <footer class="page-footer">
+  <div class="container">
+    <section class="page-footer__info footer-section">
+      <h3 class="footer-section__title">Информация</h3>
+      <ul class="footer-section__list">
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">о сайте</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">доставка работ</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">оплата</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-footer__cooperation footer-section">
+      <h3 class="footer-section__title">Сотрудничество</h3>
+      <ul class="footer-section__list">
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">выставки и ярморки</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">магазины для творчества</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">реклама на сайте</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">публичный договор-оферта</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-footer__contacts footer-section">
+      <h3 class="footer-section__title">HandMaster</h3>
+      <ul class="footer-section__list">
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="mailto:info@handmade.by">
+            <svg width="20" height="20" class="footer-section__link-img" role="img">
+              <use xlink:href="img/svg/symbol/sprite.svg#mail"></use>
+            </svg>
+            info@handmade.by
+          </a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="mailto:info@handmade.by">
+            <svg width="20" height="20" class="footer-section__link-img" role="img">
+              <use xlink:href="img/svg/symbol/sprite.svg#write"></use>
+            </svg>
+            обратная связь
+          </a>
+        </li>
+      </ul>
+      <div class="footer-socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#odnoklassniki"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
