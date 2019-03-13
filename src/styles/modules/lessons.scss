@@ -4,6 +4,13 @@
   grid-row-gap: rem(20);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(rem(170), 1fr);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .lessons__item:nth-child(1) {
@@ -24,31 +31,74 @@
 .lesson {
   display: flex;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 768px) {
+    width: 84%;
+    margin-bottom: 4%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+}
+
+.lesson:last-child {
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .lesson:first-child {
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .lesson:first-child .lesson__img {
   width: 100%;
-  max-height: rem(200);
+
+  @media (max-width: 768px) {
+    flex: 1 0 150px;
+    height: 175px;
+  }
+
+  @media (max-width: 500px) {
+    flex: 1 0 130px;
+    height: 145px;
+  }
 }
 
 .lesson:not(:first-child) .lesson__img {
-  flex: 1 0 rem(150);
-  height: rem(170);
-  margin-right: rem(10);
+  flex: 1 0 150px;
+  height: 175px;
+
+  @media (max-width: 500px) {
+    flex: 1 0 130px;
+    height: 145px;
+  }
 }
 
 .lesson__img img {
+  width: 100%;
   height: 100%;
 
   object-fit: cover;
 }
 
+.lesson__content {
+  padding: rem(10);
+  padding-top: 0;
+}
+
 .lesson:first-child .lesson__content {
   padding: rem(10);
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 .lesson__title {
@@ -59,19 +109,21 @@
   font-weight: 500;
   color: #393f45;
   text-transform: uppercase;
+
+  @media (max-width: 500px) {
+    font-size: 11px;
+  }
 }
 
 .lesson__text p {
   margin-bottom: rem(10);
-  font-size: rem(12);
-  line-height: rem(15);
+  font-size: 12px;
+  line-height: 15px;
   color: #697482;
 }
 
 .lesson__link {
   max-width: rem(110);
-  margin: rem(10) 0;
-  margin-top: rem(15);
   padding: rem(6);
   font-size: rem(12);
   line-height: rem(16);

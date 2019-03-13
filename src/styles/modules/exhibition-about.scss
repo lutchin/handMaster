@@ -1,17 +1,22 @@
 .exhibition-about__gallery {
-  width: calc(100% + 20px);
-  margin-left: -10px;
+  .exhibition-gallery__list {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+
+  .exhibition-gallery__item {
+    width: calc((100% - 2 * 10px) / 3);
+    height: 140px;
+    overflow: hidden;
+  }
+
+  .exhibition-gallery__img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
 }
 
-.exhibition-about__gallery .gallery__item {
-  width: calc((100% - 2 * 10px) / 3);
-  height: 140px;
-  overflow: hidden;
-}
-
-.exhibition-about__gallery .gallery__img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}

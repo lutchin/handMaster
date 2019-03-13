@@ -34,6 +34,10 @@ body {
   line-height: 1.4;
 }
 
+body.open {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -147,6 +151,9 @@ input[type="file"].visually-hidden {
 @import "modules/promo.scss";
 @import "modules/masters.scss";
 @import "modules/lessons.scss";
+@import "modules/lessons-video.scss";
+@import "modules/news.scss";
+@import "modules/last.scss";
 
 .section {
   margin-bottom: rem(65);
@@ -242,17 +249,33 @@ input[type="file"].visually-hidden {
   color: $gray;
 }
 
+
+// Gallery
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -1%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-bottom: -30px;
+  }
 }
 
 .gallery__item {
   width: 22%;
-  margin: 0 1%;
+
+  @media (max-width: 768px) {
+    width: 40%;
+    margin: 0 2%;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    width: 46%;
+  }
 }
+
 
 // Video
 .video {
@@ -316,8 +339,6 @@ input[type="file"].visually-hidden {
 
   fill-opacity: 1;
 }
-
-/* Enabled */
 
 .video--enabled {
   cursor: pointer;
