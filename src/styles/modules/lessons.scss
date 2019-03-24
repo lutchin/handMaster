@@ -81,9 +81,18 @@
   }
 }
 
+.lesson__img {
+  overflow: hidden;
+}
+
+.lesson__img:hover img {
+  transform: scale(1.1);
+}
+
 .lesson__img img {
   width: 100%;
   height: 100%;
+  transition: $transition;
 
   object-fit: cover;
 }

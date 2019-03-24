@@ -1,0 +1,7 @@
+.lessons-video__header br {
+  display: none;
+
+  @media (max-width: 375px) {
+    display: block;
+  }
+}

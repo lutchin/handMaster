@@ -25,6 +25,16 @@
 
 .intro__link {
   width: rem(200);
+  font-size: rem(18);
+  line-height: 1;
   background: #ffe9e2;
+  border-color: transparent;
+  border-radius: rem(22);
+}
+
+.intro__link:hover,
+.intro__link:focus {
+  color: $gray;
+  background: #f8bfac;
   border-color: transparent;
 }
