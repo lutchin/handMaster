@@ -1,0 +1,71 @@
+.page-content__header {
+  padding: rem(26) 0;
+  background: #757575 url("../img/general/content-header-bg.jpg") center/cover no-repeat;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-content__title {
+  display: flex;
+  align-items: center;
+  font-family: $montserratMedium;
+  font-size: rem(22);
+  font-weight: 500;
+  color: #393f45;
+  text-transform: uppercase;
+}
+
+.page-content__title-count {
+  margin-left: rem(10);
+  font-size: rem(18);
+  color: #b6adaa;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item::after {
+  content: "\00bb";
+  margin: 0 rem(5);
+}
+
+.breadcrumbs__item:last-child::after {
+  content: none;
+}
+
+.breadcrumbs__link {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  color: $gray;
+  transition: $transition;
+}
+
+.breadcrumbs__link[href]:hover,
+.breadcrumbs__link[href]:focus {
+  color: $pink;
+}
+
+.breadcrumbs__link-img {
+  width: 15px;
+  height: 15px;
+  transition: $transition;
+  fill: #393f45;
+}
+
+.breadcrumbs__link:hover .breadcrumbs__link-img,
+.breadcrumbs__link:focus .breadcrumbs__link-img {
+  fill: $pink;
+}
