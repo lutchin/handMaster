@@ -58,4 +58,15 @@ $(document).ready(function() {
   }
   
   findVideos();
+
+  // Count 
+  let count = $('.count');
+
+  count.each(function() {
+    if($(this).text() > 0) {
+      $(this).parent().addClass('not-empty');
+    } else {
+      $(this).parent().removeAttr('href');
+    }
+  })
 });
