@@ -36,6 +36,7 @@
 	"dependencies": {
 		"jquery": "^3.3.1",
 		"normalize.css": "^8.0.1",
+		"nouislider": "^13.1.4",
 		"svg4everybody": "^2.1.9"
 	}
 }
