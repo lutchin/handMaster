@@ -101,15 +101,16 @@ $(document).ready(function() {
     start: [20, 80],
     connect: true,
     format: wNumb({
-      decimals: 2,
+      decimals: 1,
       mark: '.',
-      thousand: ' ',
+      suffix: ' BYN',
+      thousand: '',
     }),
     range: {
       'min': [0],
       '10%': [10, 1],
-      '50%': [80, 5],
-      '80%': 150,
+      '50%': [500, 5],
+      '80%': 1200,
       'max': 2000
     }
   });
@@ -137,6 +138,8 @@ $(document).ready(function() {
       var step = steps[handle];
 
       var position;
+
+      // this.style.width = ((this.value.length + 1) * 6) + 'px';
 
       // 13 is enter,
       // 38 is key up,

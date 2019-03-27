@@ -1,0 +1,21 @@
+.catalog__sort {
+  margin-bottom: rem(25);
+}
+
+
+// Catalog gallery
+.catalog__gallery {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -1.5%;
+    margin-bottom: -20px;
+  }
+
+  .gallery__item {
+    width: 30.3333%;
+    margin: 0 1.5%;
+    margin-bottom: 20px;
+  }
+}
