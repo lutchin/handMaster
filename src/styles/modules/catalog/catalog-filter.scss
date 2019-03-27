@@ -1,0 +1,213 @@
+.catalog {
+  .container {
+    display: flex;
+  }
+}
+
+.catalog__filter {
+  flex: 1 0 #{rem(210)};
+  margin-right: rem(30);
+}
+
+.filter-form__field {
+  width: rem(180);
+  margin: 0;
+  margin-bottom: rem(25);
+  padding: 0;
+  border: none;
+}
+
+.filter-form__field legend {
+  margin-bottom: rem(12);
+  font-family: $montserratMedium;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #54555a;
+  text-transform: uppercase;
+}
+
+// Filter checkbox
+.check {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  appearance: none;
+  clip: rect(0 0 0 0);
+}
+
+.check__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  border: 1px solid #cdd5dd;
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.check__input:checked + .check__box {
+  background: #343e48;
+  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 70 70' version='1.1' viewBox='0 0 70 70' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m26.474 70c-2.176 0-4.234-1.018-5.557-2.764l-17.868-23.597c-2.324-3.069-1.719-7.439 1.35-9.764 3.074-2.326 7.441-1.717 9.766 1.35l11.752 15.518 29.557-47.458c2.035-3.265 6.332-4.264 9.604-2.232 3.268 2.034 4.266 6.334 2.23 9.602l-34.916 56.06c-1.213 1.949-3.307 3.175-5.6 3.279-0.107 4e-3 -0.212 6e-3 -0.318 6e-3z' fill='%23ffffff'/%3E%3C/svg%3E");
+  border-color: #343e48;
+}
+
+.check:hover > .check__box,
+.check__input:focus + .check__box {
+  border-color: #343e48;
+}
+
+.check:hover > .check__input:checked + .check__box,
+.check__input:checked:focus + .check__box {
+  box-shadow: 0 0 0 0.1em $pink;
+}
+
+
+// Filter category
+.filter-form__field.filter-category {
+  width: rem(210);
+}
+
+.filter-category__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: rem(10);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-category__item::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg width='451.85px' height='451.85px' viewBox='0 0 451.847 451.847' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23343e48' d='m225.92 354.71c-8.098 0-16.195-3.092-22.369-9.263l-194.28-194.29c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.9 171.92 171.91-171.91c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751l-194.28 194.29c-6.177 6.172-14.274 9.257-22.369 9.257z'/%3E%3C/svg%3E%0A") center/contain no-repeat;
+}
+
+.filter-category__item.active::before {
+  transform: rotate(180deg);
+}
+
+.filter-category__item-title {
+  padding-left: rem(20);
+  font-family: $montserratRegular;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #54555a;
+  cursor: pointer;
+}
+
+.filter-category__item-count,
+.filter-category__subitem-count {
+  margin-left: rem(7);
+  padding: 1px rem(10);
+  font-size: 10px;
+  line-height: 12px;
+  background: #ffeee9;
+  border-radius: 4px;
+}
+
+.filter-category__sublist {
+  display: NONE;
+  margin-top: rem(6);
+  margin-left: rem(20);
+
+  .active & {
+    display: block;
+  }
+}
+
+.filter-category__subitem {
+  margin-bottom: rem(6);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-category__subitem-title {
+  font-family: $montserratLight;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+// Filter price
+.filter-price__line {
+  height: 5px;
+  margin-bottom: 10px;
+  background: #e3e5e7;
+  border: none;
+  border-radius: 3px;
+}
+
+.noUi-connect {
+  background: #343e48;
+  border-radius: 3px;
+}
+
+.noUi-tooltip {
+  display: none;
+}
+
+.noUi-horizontal .noUi-origin {
+  height: 100%;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transform: translateY(-50%);
+}
+
+.noUi-horizontal .noUi-handle::before,
+.noUi-horizontal .noUi-handle::after {
+  content: none;
+}
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
+  right: -5px;
+}
+
+.filter-price__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-price__control {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  font-size: 10px;
+  line-height: 12px;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+}
+
+.filter-price__control input {
+  width: 100%;
+  font-size: 10px;
+  line-height: 12px;
+  border: none;
+}
