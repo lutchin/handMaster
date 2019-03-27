@@ -137,12 +137,6 @@ input[type="file"].visually-hidden {
 @import "modules/header.scss";
 @import "modules/footer.scss";
 @import "modules/item.scss";
-@import "modules/exhibition-intro.scss";
-@import "modules/exhibition-about.scss";
-@import "modules/exhibition-photo.scss";
-@import "modules/exhibition-video.scss";
-@import "modules/exhibition-promo.scss";
-@import "modules/exhibition-contacts.scss";
 @import "modules/intro.scss";
 @import "modules/promotions.scss";
 @import "modules/discount.scss";
@@ -154,6 +148,19 @@ input[type="file"].visually-hidden {
 @import "modules/lessons-video.scss";
 @import "modules/news.scss";
 @import "modules/last.scss";
+
+// Exhibition page
+@import "modules/exhibition/exhibition-intro.scss";
+@import "modules/exhibition/exhibition-about.scss";
+@import "modules/exhibition/exhibition-photo.scss";
+@import "modules/exhibition/exhibition-video.scss";
+@import "modules/exhibition/exhibition-promo.scss";
+@import "modules/exhibition/exhibition-contacts.scss";
+
+// Catalog page
+@import "modules/catalog/catalog-header.scss";
+@import "modules/catalog/catalog-filter.scss";
+
 
 .section {
   margin-bottom: rem(65);

@@ -83,4 +83,26 @@ $(document).ready(function() {
       $(this).parent().removeAttr('href');
     }
   })
+
+
+  // Filter price range
+  var stepsSlider = document.querySelector('.filter-price__line');
+  var input0 = document.querySelector('.filter-price__control--from input');
+  var input1 = document.querySelector('.filter-price__control--to input');
+  var inputs = [input0, input1];
+
+  noUiSlider.create(stepsSlider, {
+    start: [20, 80],
+    connect: true,
+    tooltips: [true, wNumb({ decimals: 1 })],
+    range: {
+      'min': [0],
+      'max': 200
+    }
+  });
+
+  stepsSlider.noUiSlider.on('update', function(values, handle) {
+    inputs[handle].value = values[handle];
+  });
+
 });

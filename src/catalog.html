@@ -10,31 +10,23 @@
   <!--[if lt IE 9]>
   	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
   <![endif]-->
-  
 
-  <title>Hand Master</title>
-  
+
+  <title>Каталог</title>
+
 
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
   @include('./html/header.html')
-  
-  <main class="page-content">
-    @include('./html/intro.html')
-    @include('./html/promotions.html')
-    @include('./html/discount.html')
-    @include('./html/popular.html')
-    @include('./html/popular-video.html')
-    @include('./html/presents.html')
-    @include('./html/promo.html')
-    @include('./html/masters.html')
-    @include('./html/lessons.html')
-    @include('./html/lessons-video.html')
-    @include('./html/news.html')
-    @include('./html/last.html')
-    
+
+  <main class="page-content catalog">
+    @include('./html/catalog/catalog-header.html')
+    <div class="container">
+      @include('./html/catalog/catalog-content.html')
+      @include('./html/catalog/catalog-filter.html')
+    </div>
   </main>
 
   @include('./html/footer.html')
