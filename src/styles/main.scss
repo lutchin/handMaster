@@ -283,6 +283,10 @@ input[type="file"].visually-hidden {
   @media (max-width: 600px) {
     width: 46%;
   }
+
+  .gallery--row & {
+    display: inline-flex;
+  }
 }
 
 // Video
@@ -292,6 +296,14 @@ input[type="file"].visually-hidden {
   height: 0;
   padding-bottom: 56.25%;
   background-color: #000000;
+
+  .gallery--row & {
+    flex: 1 0 auto;
+    width: rem(200);
+    height: rem(200);
+    margin-right: rem(20);
+    padding-bottom: 0;
+  }
 }
 
 .video__link {

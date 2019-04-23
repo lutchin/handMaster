@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<![endif]-->
-  <!--[if lt IE 9]>
-  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <![endif]-->
-  
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
 
-  <title>Page title</title>
-  
+
+  <title>Hand Master</title>
+
 
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  <header class="page-header">
+<header class="page-header">
   <div class="container">
     <div class="page-header__menu menu">
       <div class="page-header__logo logo">
@@ -72,6 +72,20 @@
               </svg>
             </a>
           </li>
+
+          <!-- Этот блок для залогиненного пользователя -->
+          <li class="user-info__item user-info__item--user">
+            <a href="#" class="user-info__link" aria-label="Вход в личный кабинет">
+              <img src="img/content/user-login.jpg" alt="Фото пользователя">
+            </a>
+          </li>
+          <li class="user-info__item user-info__item--comments">
+            <a href="#" class="user-info__link" aria-label="Комментарии пользователя">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#comments"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -109,9 +123,9 @@
   </div>
 </header>
 
-  
-  <main class="page-content">
-    <section class="section intro container">
+
+<main class="page-content">
+  <section class="section intro container">
   <header class="section-header intro__header">
     <h1>Изделия ручной работы, подарки, сувениры от лучших мастеров!</h1>
   </header>
@@ -120,7 +134,7 @@
   </div>
 </section>
 
-    <section class="section promotions">
+  <section class="section promotions">
   <div class="container">
     <header class="section-header promotions__header">
       <h2>Лучшие акции и предложения!</h2>
@@ -159,7 +173,7 @@
   </div>
 </section>
 
-    <section class="section discount">
+  <section class="section discount">
   <div class="container">
     <header class="section-header discount__header">
       <h2>Акции и скидки</h2>
@@ -486,7 +500,7 @@
   </div>
 </section>
 
-    <section class="section popular">
+  <section class="section popular">
   <div class="container">
     <header class="section-header popular__header">
       <h2>Популярные товары</h2>
@@ -805,7 +819,7 @@
   </div>
 </section>
 
-    <section class="section popular-video">
+  <section class="section popular-video">
   <div class="container">
     <header class="section-header popular-video__header">
       <h2>Видео популярных товаров</h2>
@@ -1172,7 +1186,7 @@
   </div>
 </section>
 
-    <section class="section presents">
+  <section class="section presents">
   <div class="container">
     <header class="section-header presents__header">
       <h2>Подарки</h2>
@@ -1261,7 +1275,7 @@
   </div>
 </section>
 
-    <section class="section promo container">
+  <section class="section promo container">
   <div class="promo__wrapper">
     <header class="section-header promo__header">
       <h2>Как начать зарабатывать с <span>HANDMASTER</span></h2>
@@ -1272,7 +1286,7 @@
   </div>
 </section>
 
-    <section class="section masters">
+  <section class="section masters">
   <div class="container">
     <header class="section-header masters__header">
       <h2>Мастера</h2>
@@ -1577,7 +1591,7 @@
   </div>
 </section>
 
-    <section class="section lessons">
+  <section class="section lessons">
   <div class="container">
     <header class="section-header lessons__header">
       <h2>Мастер-классы</h2>
@@ -1648,7 +1662,7 @@
   </div>
 </section>
 
-    <section class="section lessons-video">
+  <section class="section lessons-video">
   <div class="container">
     <header class="section-header lessons-video__header">
       <h2>Видео <br> мастер-классов</h2>
@@ -1835,7 +1849,7 @@
   </div>
 </section>
 
-    <section class="section news">
+  <section class="section news">
   <div class="container">
     <header class="section-header news__header">
       <h2>Афиша</h2>
@@ -1904,7 +1918,7 @@
   </div>
 </section>
 
-    <section class="section last">
+  <section class="section last">
     <div class="container">
       <header class="section-header last__header">
         <h2>Последние просмотренные</h2>
@@ -1994,10 +2008,10 @@
     </div>
   </section>
   
-    
-  </main>
 
-  <footer class="page-footer">
+</main>
+
+<footer class="page-footer">
   <div class="container">
     <section class="page-footer__info footer-section">
       <h3 class="footer-section__title">Информация</h3>
@@ -2096,8 +2110,8 @@
 </footer>
 
 
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

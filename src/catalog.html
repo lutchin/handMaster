@@ -5,11 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<![endif]-->
-  <!--[if lt IE 9]>
-  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-  <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <![endif]--><!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
 
 
   <title>Каталог</title>
@@ -24,8 +21,7 @@
   <main class="page-content catalog">
     @include('./html/catalog/catalog-header.html')
     <div class="container">
-      @include('./html/catalog/catalog-filter.html')
-      @include('./html/catalog/catalog-content.html')
+      @include('./html/catalog/catalog-filter.html') @include('./html/catalog/catalog-content.html')
     </div>
   </main>
 

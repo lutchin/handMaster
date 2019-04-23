@@ -1,4 +1,488 @@
-<section class="catalog__content">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <![endif]--><!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+
+
+  <title>Каталог</title>
+
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header class="page-header">
+  <div class="container">
+    <div class="page-header__menu menu">
+      <div class="page-header__logo logo">
+        <a href="index.html" class="logo__link">HandMaster</a>
+      </div>
+
+      <div class="page-header__search">
+        <form class="search-form">
+          <p class="search-form__block">
+            <label for="site-search" class="search-form__block-title visually-hidden">Поиск по сайту</label>
+            <input class="search-form__field" id="site-search" type="search" name="search" placeholder="Поиск">
+            <button class="search-form__submit" type="submit" aria-label="Искать">
+              <svg width="18" height="18" class="search-form__submit-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <div class="page-header__user user-info">
+        <ul class="user-info__list">
+          <li class="user-info__item user-info__item--search">
+            <a href="#" class="user-info__link" aria-label="Поиск по сайту">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-info__item user-info__item--likes">
+            <a href="#" class="user-info__link" aria-label="Лайки пользователя">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#likes"></use>
+              </svg>
+            </a>
+            <span class="user-info__link-count">10</span>
+          </li>
+          <li class="user-info__item user-info__item--cart">
+            <a href="#" class="user-info__link" aria-label="Корзина пользователя">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#cart"></use>
+              </svg>
+            </a>
+            <span class="user-info__link-count">178</span>
+          </li>
+          <li class="user-info__item user-info__item--login">
+            <a href="#" class="user-info__link" aria-label="Вход в личный кабинет">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#login"></use>
+              </svg>
+            </a>
+          </li>
+
+          <!-- Этот блок для залогиненного пользователя -->
+          <li class="user-info__item user-info__item--user">
+            <a href="#" class="user-info__link" aria-label="Вход в личный кабинет">
+              <img src="img/content/user-login.jpg" alt="Фото пользователя">
+            </a>
+          </li>
+          <li class="user-info__item user-info__item--comments">
+            <a href="#" class="user-info__link" aria-label="Комментарии пользователя">
+              <svg width="23" height="23" class="user-info__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#comments"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-toggle" aria-label="Показать/скрыть меню"></button>
+
+    </div>
+
+    <div class="page-header__nav">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Изделия</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Мастера</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Мастер-классы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Акции и скидки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Афиша</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Продавцам</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Покупателям</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+  <main class="page-content catalog">
+    <section class="page-content__header">
+  <div class="container">
+    <h1 class="page-content__title">Каталог <span class="page-content__title-count">(1156)</span></h1>
+
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link" aria-label="Ссылка на начальную страницу">
+            <svg width="15" height="15" class="breadcrumbs__link-img" role="img">
+              <use xlink:href="img/svg/symbol/sprite.svg#home"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Каталог</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <aside class="catalog__filter filter">
+  <h2 class="visually-hidden">Фильтр для каталога товаров</h2>
+
+  <div class="filter__form">
+    <form class="filter-form">
+      <fieldset class="filter-form__field filter-category">
+        <legend>Категория:</legend>
+        <ul class="filter-category__list">
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Аксессуары</h3>
+            <span class="filter-category__item-count">25</span>
+
+            <ul class="filter-category__sublist">
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Галстук-бабочка </label>
+                <span class="filter-category__subitem-count">2</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Запонки </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Обложка для документов </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Ремни </label> <span class="filter-category__subitem-count">8</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Чехлы </label> <span class="filter-category__subitem-count">7</span>
+              </li>
+            </ul>
+          </li>
+
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Детские товары</h3>
+            <span class="filter-category__item-count">81</span>
+
+            <ul class="filter-category__sublist">
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Галстук-бабочка </label>
+                <span class="filter-category__subitem-count">2</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Запонки </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Обложка для документов </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Ремни </label> <span class="filter-category__subitem-count">8</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Чехлы </label> <span class="filter-category__subitem-count">7</span>
+              </li>
+            </ul>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Обувь</h3>
+            <span class="filter-category__item-count">41</span>
+
+            <ul class="filter-category__sublist">
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Галстук-бабочка </label>
+                <span class="filter-category__subitem-count">2</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Запонки </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Обложка для документов </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Ремни </label> <span class="filter-category__subitem-count">8</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Чехлы </label> <span class="filter-category__subitem-count">7</span>
+              </li>
+            </ul>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Одежда</h3>
+            <span class="filter-category__item-count">95</span>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Детские товары</h3>
+            <span class="filter-category__item-count">81</span>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Обувь</h3>
+            <span class="filter-category__item-count">41</span>
+
+            <ul class="filter-category__sublist">
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Галстук-бабочка </label>
+                <span class="filter-category__subitem-count">2</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Запонки </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Обложка для документов </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Ремни </label> <span class="filter-category__subitem-count">8</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Чехлы </label> <span class="filter-category__subitem-count">7</span>
+              </li>
+            </ul>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Одежда</h3>
+            <span class="filter-category__item-count">95</span>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Детские товары</h3>
+            <span class="filter-category__item-count">81</span>
+
+            <ul class="filter-category__sublist">
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Галстук-бабочка </label>
+                <span class="filter-category__subitem-count">2</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Запонки </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Обложка для документов </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Ремни </label> <span class="filter-category__subitem-count">8</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Чехлы </label> <span class="filter-category__subitem-count">7</span>
+              </li>
+            </ul>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Обувь</h3>
+            <span class="filter-category__item-count">41</span>
+
+            <ul class="filter-category__sublist">
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Галстук-бабочка </label>
+                <span class="filter-category__subitem-count">2</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Запонки </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Обложка для документов </label>
+                <span class="filter-category__subitem-count">4</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Ремни </label> <span class="filter-category__subitem-count">8</span>
+              </li>
+              <li class="filter-category__subitem">
+                <label class="filter-category__subitem-title check"> <input class="check__input" type="checkbox">
+                  <span class="check__box"></span> Чехлы </label> <span class="filter-category__subitem-count">7</span>
+              </li>
+            </ul>
+          </li>
+          <li class="filter-category__item">
+            <h3 class="filter-category__item-title">Одежда</h3>
+            <span class="filter-category__item-count">95</span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="filter-form__field filter-price">
+        <legend>Цена:</legend>
+        <div class="filter-price__line"></div>
+
+        <div class="filter-price__controls">
+          <label class="filter-price__control filter-price__control--from" aria-label="Выбор цены от">
+            <input id="filter-price__control--from" name="price-from" type="text">
+            <!-- <span>BYN</span> -->
+          </label> <label class="filter-price__control filter-price__control--to" aria-label="Выбор цены до">
+          <input id="filter-price__control--to" name="price-to" type="text">
+          <!-- <span>BYN</span> -->
+        </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-form__field filter-whom">
+        <legend>Для кого:</legend>
+        <ul class="filter-whom__list">
+          <li class="filter-whom__item">
+            <label class="filter-whom__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Для нее </label> <span class="filter-whom__item-count">7</span>
+          </li>
+          <li class="filter-whom__item">
+            <label class="filter-whom__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Для него </label> <span class="filter-whom__item-count">23</span>
+          </li>
+          <li class="filter-whom__item">
+            <label class="filter-whom__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Детям </label> <span class="filter-whom__item-count">12</span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="filter-form__field filter-color">
+        <legend>Цвет:</legend>
+        <ul class="filter-color__list">
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #c4c4c4"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #992e2e"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #82b380"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #97328a"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #992e2e"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #27af22"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #523535"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #992e2e"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #082906"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #1f1f1f"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #d6c45b"></span> </label>
+          </li>
+          <li class="filter-color__item">
+            <label class="filter-color__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box" style="background: #3022af"></span> </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="filter-form__field filter-materials">
+        <legend>Материал:</legend>
+        <ul class="filter-materials__list">
+          <li class="filter-materials__item">
+            <label class="filter-materials__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Полимерная глина </label>
+          </li>
+          <li class="filter-materials__item">
+            <label class="filter-materials__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Дерево </label>
+          </li>
+          <li class="filter-materials__item">
+            <label class="filter-materials__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Шерсть </label>
+          </li>
+          <li class="filter-materials__item">
+            <label class="filter-materials__item-title check"> <input class="check__input" type="checkbox">
+              <span class="check__box"></span> Натуральная кожа </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <div class="filter-result">
+        <p class="filter-result__info">
+          Найдено <span class="filter-result__count">145</span>
+        </p>
+        <button class="filter-result__reset" type="reset" aria-label="Очистить форму">
+          <svg width="12" height="12" class="filter-result__reset-img" role="img">
+            <use xlink:href="img/svg/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="filter__close">
+    <button class="filter__close-btn" type="button">
+      <svg width="12" height="12" role="img">
+        <use xlink:href="img/svg/symbol/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+</aside>
+ <section class="catalog__content">
   <div class="catalog__description">
     <div class="catalog__description-img">
       <picture>
@@ -1866,3 +2350,111 @@
     </ul>
   </div>
 </section>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+  <div class="container">
+    <section class="page-footer__info footer-section">
+      <h3 class="footer-section__title">Информация</h3>
+      <ul class="footer-section__list">
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">о сайте</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">доставка работ</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">оплата</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-footer__cooperation footer-section">
+      <h3 class="footer-section__title">Сотрудничество</h3>
+      <ul class="footer-section__list">
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">выставки и ярморки</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">магазины для творчества</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">реклама на сайте</a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="#">публичный договор-оферта</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-footer__contacts footer-section">
+      <h3 class="footer-section__title">HandMaster</h3>
+      <ul class="footer-section__list">
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="mailto:info@handmade.by">
+            <svg width="20" height="20" class="footer-section__link-img" role="img">
+              <use xlink:href="img/svg/symbol/sprite.svg#mail"></use>
+            </svg>
+            info@handmade.by
+          </a>
+        </li>
+        <li class="footer-section__item">
+          <a class="footer-section__link" href="mailto:info@handmade.by">
+            <svg width="20" height="20" class="footer-section__link-img" role="img">
+              <use xlink:href="img/svg/symbol/sprite.svg#write"></use>
+            </svg>
+            обратная связь
+          </a>
+        </li>
+      </ul>
+      <div class="footer-socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в соцсети ютуб">
+              <svg width="20" height="20" class="socials__link-img" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#odnoklassniki"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

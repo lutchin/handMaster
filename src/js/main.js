@@ -1,7 +1,30 @@
-$(document).ready(function() {
+$(document).ready(function () {
   svg4everybody({});
 
-  $('.nav-toggle').on('click', function() {
+  // Catalog sort
+  $('.view__item--rows').on('click', function () {
+    $(this).toggleClass('active');
+    $('.view__item--grid').toggleClass('active');
+    $('.catalog__gallery').addClass('gallery--row');
+  });
+
+  $('.view__item--grid').on('click', function () {
+    $(this).toggleClass('active');
+    $('.view__item--rows').toggleClass('active');
+    $('.catalog__gallery').removeClass('gallery--row');
+  });
+
+
+  // Sort filter menu
+  $('.sort__filter').on('click', function () {
+    $('.catalog__filter').addClass('showed');
+  });
+
+  $('.filter__close-btn').on('click', function () {
+    $('.catalog__filter').removeClass('showed');
+  });
+
+  $('.nav-toggle').on('click', function () {
     $('body').toggleClass('open');
   });
 
@@ -63,11 +86,11 @@ $(document).ready(function() {
   let searchBtn = $('.user-info__item--search');
   let searchForm = $('.page-header__search');
 
-  searchBtn.on('click', function() {
+  searchBtn.on('click', function () {
     searchForm.toggleClass('active');
   })
 
-  $(document).on('click', function(e) {
+  $(document).on('click', function (e) {
     if (!searchBtn.is(e.target) && searchBtn.has(e.target).length === 0 && !searchForm.is(e.target) && searchForm.has(e.target).length === 0) {
       searchForm.removeClass('active')
     }
@@ -76,7 +99,7 @@ $(document).ready(function() {
   // Count 
   let count = $('.count');
 
-  count.each(function() {
+  count.each(function () {
     if ($(this).text() > 0) {
       $(this).parent().addClass('not-empty');
     } else {
@@ -86,7 +109,7 @@ $(document).ready(function() {
 
   // Filter dropdown
 
-  $('.filter-category__item-title').on('click', function() {
+  $('.filter-category__item-title').on('click', function () {
     $(this).parent().toggleClass('active');
   })
 
@@ -111,22 +134,22 @@ $(document).ready(function() {
       '10%': [10, 1],
       '50%': [500, 5],
       '80%': 1200,
-      'max': 2000
-    }
+      'max': 2000,
+    },
   });
 
-  stepsSlider.noUiSlider.on('update', function(values, handle) {
+  stepsSlider.noUiSlider.on('update', function (values, handle) {
     inputs[handle].value = values[handle];
   });
 
   // Listen to keydown events on the input field.
-  inputs.forEach(function(input, handle) {
+  inputs.forEach(function (input, handle) {
 
-    input.addEventListener('change', function() {
+    input.addEventListener('change', function () {
       stepsSlider.noUiSlider.setHandle(handle, this.value);
     });
 
-    input.addEventListener('keydown', function(e) {
+    input.addEventListener('keydown', function (e) {
 
       var values = stepsSlider.noUiSlider.get();
       var value = Number(values[handle]);
